@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace BiosCasusStatePattern
 {
-	internal class PaidState
+	public class PaidState : State
 	{
+		public PaidState(Order order) : base(order)
+		{
+		}
 	}
 }
